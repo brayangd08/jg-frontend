@@ -3,7 +3,7 @@ import { MyRouter } from './router/MyRouter';
 
 function App() {
   return (
-    <div>
+    <div className='layout'>
       <MyRouter/>
     </div>
   );

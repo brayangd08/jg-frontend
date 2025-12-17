@@ -1,12 +1,30 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
+import logo from "../../assets/images/Logo.png"
 
 export const HeaderNav = () => {
   return (
-    <header>
-      <h1>Spa lashes by JG</h1>
+    <header class="header">
+      <div>
+        <img src={logo} class="logo"></img>
+      </div>
       <nav>
         <ul>
-          <li></li>
+          <li>
+            <NavLink to="/home">Inicio</NavLink>
+          </li>
+          <li>
+            <NavLink to="/booking">Reservas</NavLink>
+          </li>
+          <li>
+            <NavLink to="/product">Productos</NavLink>
+          </li>
+          <li>
+            <NavLink to="/serviceJg">Servicios</NavLink>
+          </li>
+          <li>
+            <NavLink to="/client">Clientes</NavLink>
+          </li>
         </ul>
       </nav>
     </header>
